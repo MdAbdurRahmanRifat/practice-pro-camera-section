@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.banner{
+    max-width: 1440px;
+    margin: 5% auto;
+    border: 2px solid blue;
+    padding: 20px;
+}
+.banner-section-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-image-container{
+    background-image: url('images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.banner-paragraph{
+    max-width: 500px;
+    padding-top: 10px;
+}
+.banner-btn{
+    border-radius: 41px;
+    background: #E02C6D;
+    color: #FFF;
+    padding: 10px 24px;
+    border: 0;
+    margin-top: 16px;
+}
+
+
+
+/* ----------------media quary------------------------ */
+@media screen and (max-width: 576px){
+    .banner-section-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 38px;
+    }
+    .camera-photo{
+        width: 100%;
+    }
+  .banner-left-side{
+    text-align: center;
+  }
+}
